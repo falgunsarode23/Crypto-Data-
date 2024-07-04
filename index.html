@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Data</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            cursor: pointer;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Crypto Data</h1>
+    <input type="text" id="searchInput" placeholder="Search by name or symbol" onkeyup="searchTable()">
+    <button onclick="sortTableByMarketCap()">Sort by Market Cap</button>
+    <button onclick="sortTableByPercentageChange()">Sort by Percentage Change</button>
+    <table id="cryptoTable">
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Symbol</th>
+                <th>Current Price</th>
+                <th>Total Volume</th>
+                <th>Market Cap</th>
+                <th>Percentage Change</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data will be inserted here -->
+        </tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
